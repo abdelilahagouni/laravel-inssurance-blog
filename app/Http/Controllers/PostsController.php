@@ -75,10 +75,20 @@ class PostsController extends Controller
     }
 
     
-    public function update(Request $request, $id)
+    public function update(Request $request, $slug)
     {
-        
+        Post::where('slug',$slug)
+        ->update([
+            'title' => $request->input('title'),
+            'description' => $request->input('description'),
+            'slug' => $slug,
+            'user_id' => auth()->user()->id
 
+
+       ]);
+
+       return redirect('/blog/' . $slug)
+       ->with('message', 'the post has been edited');
     }
 
 
