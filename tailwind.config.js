@@ -3,6 +3,9 @@ module.exports = {
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
     "./resources/**/*.vue",
+    "./resources/views/blog",
+    " ./resources/views/blog/index.blade.php",
+    "./resources/views/blog/edit.blade.php"
     
     
 

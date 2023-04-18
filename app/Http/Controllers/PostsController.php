@@ -75,12 +75,22 @@ class PostsController extends Controller
     }
 
     
-    public function update(Request $request, $slug)
-    {
+    public function update(Request $request, $slug){
+
+        $request->validate([
+            'title' => 'required',
+            'description' => 'required',
+            'image' => 'required|mimes:jpg,png,jpeg|max:5048',
+        ]);
+     
+        $newImageName = uniqid() . '-' . $slug  . '.' . $request->image->extension();
+        $request->image->move(public_path('images'),$newImageName);
+        
         Post::where('slug',$slug)
         ->update([
             'title' => $request->input('title'),
             'description' => $request->input('description'),
+            'image_path' => $newImageName,
             'slug' => $slug,
             'user_id' => auth()->user()->id
 
