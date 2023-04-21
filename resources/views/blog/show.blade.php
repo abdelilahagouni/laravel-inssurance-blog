@@ -25,20 +25,43 @@
     </div>
 </div>
 
-<div class=" container m-auto  pt-15 pb-5">
+< class=" container m-auto  pt-15 pb-5">
     <div class="flex h-96">
         <img class="object-cover w-full" src="/images/{{$post->image_path}}" alt="">
     </div>
     <div class="text-l text-gray-700 py-8 leading-6">
     {{$post->description}}
     </div>
+    
     @if(Auth::user() && Auth::user()->id == $post->user_id)
     <a href="/blog/{{$post->slug}}/edit" 
         class="bg-green-700
          text-gray-100 py-3 pc-5 mt-6
          inline-block 
          rounded-lg font-bold uppercase
-          text-lg place-self-start">Edit Posts </a>
+          text-lg place-self-start">Edit Post 
+        </a>
+
+        <form action="/blog/{{ $post->slug}}" method="post" class="inline-block" >
+
+       @csrf
+
+
+
+
+       @method('delete')
+       <button type="submit" 
+       
+        class="bg-red-700
+         text-gray-100 py-3 pc-5 mt-6
+         inline-block 
+         rounded-lg font-bold uppercase
+          text-lg place-self-start">Delete  Post
+        </button>
+        
+
+        </form>
+
      @endif
-</div>
+    </button>
 @endsection

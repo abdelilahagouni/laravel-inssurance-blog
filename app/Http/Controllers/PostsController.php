@@ -8,8 +8,7 @@ use Illuminate\Support\Str;
 
 use App\Models\Post;
 
-class PostsController extends Controller
-{
+class PostsController extends Controller {
     
     public function index()
     {
@@ -102,5 +101,13 @@ class PostsController extends Controller
     }
 
 
-    public function destroy($id) {}
+    public function destroy($slug) {
+
+
+        Post::where('slug',$slug)->delete();
+        return redirect('/blog')
+        ->with('message', 'the post has deleted');
+        
+
+    }
 }
