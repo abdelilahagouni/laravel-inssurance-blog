@@ -25,7 +25,7 @@
     </div>
 </div>
 
-< class=" container m-auto  pt-15 pb-5">
+<div class=" container m-auto  pt-15 pb-5">
     <div class="flex h-96">
         <img class="object-cover w-full" src="/images/{{$post->image_path}}" alt="">
     </div>

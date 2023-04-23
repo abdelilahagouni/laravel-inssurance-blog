@@ -2,14 +2,11 @@
 
 
 
-
 @section('content')
 
 
-
-
 <div class="hero-bg-image flex flex-col items-center justify-center">
-    <h1 class="text-gray-100 text-5xl uppercase font-bold pb-10 text-center ">Motorcycle Blog</h1>
+    <h1 class="text-gray-100 text-5xl uppercase font-bold pb-10 text-center ">Motorcycle Blog </h1>
     <a href="/" class="bg-gray-100 text-gray-700 py-4 px-5 rounded-lg font-bold uppercase text-xl">start Reading</a>
 </div>
 
@@ -34,13 +31,13 @@
      </div>
  </div>
 
- <div class="text-centert p-15 bg-gray-700 text-gray-100">
+ <div class="text-center p-15 bg-gray-700 text-gray-100">
     <h2 class="text-2xl">Blog Categories</h2>
     <div class="container mx-auto pt-10 sm:grid grid-cols-4">
-        <div class="font-bold text-3xl py-1">UX Design</div>
-        <div class="font-bold text-2xl py-1">Programming langauge</div>
-        <div class="font-bold text-3xl py-1"> Graphic Design</div>
-        <div class="font-bold text-3xl py-1">Front-End</div>
+        <div class="font-bold text-2xl py-2">UX Design</div>
+        <div class="font-bold text-1.5xl py-2">Programming </div>
+        <div class="font-bold text-2xl py-2"> Graphic Design</div>
+        <div class="font-bold text-2xl py-2">Front-End</div>
 
     </div>
  </div>
