@@ -14,7 +14,7 @@
     
     <div class="mx-2 md:mx-0">
         
-        <img class="sm:rounded-lg" src="https://picsum.photos/id/239/960/620" alt="">
+        <img class="sm:rounded-lg" src="https://images.pexels.com/photos/2549355/pexels-photo-2549355.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
      </div>
       <div class="flex flex-col items-left justify-center md-10 sm:m-0">
         <h2 class="font-bold text-gray-700 text-4xl uppercase">

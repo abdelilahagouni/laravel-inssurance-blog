@@ -7,7 +7,7 @@ html, body{
 }
 
 .hero-bg-image{
-    background:url('https://images.unsplash.com/photo-1597839219216-a773cb2473e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') no-repeat center center /cover;
+    background:url('https://images.pexels.com/photos/899238/pexels-photo-899238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center /cover;
     background-attachment: fixed;
     height: 600px;
   }
