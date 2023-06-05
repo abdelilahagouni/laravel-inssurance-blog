@@ -72,7 +72,7 @@
     </div>
   </div>
    <div class="flex">
-    <img class="object-cover" src="https://picsum.photos/id/299/960/620" alt="">
+    <img src="https://images.pexels.com/photos/1122410/pexels-photo-1122410.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
    </div>
  </div>
 
